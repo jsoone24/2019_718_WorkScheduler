@@ -5,7 +5,7 @@ import copy
 # 외출자, 사고자 입력, 실 근무자 계산
 def whos_out(p2, today_group, max_work):
     acci = ['김호송', '하석준','김수현']  # input("사고자 입력 : ").split()
-    out = ['유준상', '연상헌','한종수']  # ("외출자 입력 : ").split()'이기훈', '최의현', '최정우', '유재열', '한종수'
+    out = ['유준상', '연상헌', '한종수', '이기훈', '최의현', '최정우', '유재열', '한종수']  # ("외출자 입력 : ").split()
     real_worker, accident, outing, no_return_work, raw_outing = [], [], [], [], []
 
     for member in p2:

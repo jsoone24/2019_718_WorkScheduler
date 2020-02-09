@@ -2,9 +2,12 @@ import random
 import copy
 
 # 외출자, 사고자 입력, 실 근무자 계산
+acci = []
+out = []
 def whos_out(p2, today_group, max_work):
-    acci = ['김호송', '한종수', '유재열', '최의현', '김주환', '유준상', '이유준', '전명재']  # input("사고자 입력 : ").split()
-    out = []  # ("외출자 입력 : ").split()
+    #acci = input("사고자 입력 : ").split()
+    #out = input("외출자 입력 : ").split()
+
     real_worker, accident, outing, no_return_work, raw_outing = [], [], [], [], []
 
     for member in p2:
@@ -491,6 +494,6 @@ def scheduler(Timetable, which_group, work_group, is_weekend, p2):
 
         for i in range(4):
             temp_work[i] += temp_work_2[i]
-    print_work(today_time, today_group, temp_work, p2, accident, outing, no_return_work, real_worker, hes_1, hes_2, hes_3, long_nighter)
+    #print_work(today_time, today_group, temp_work, p2, accident, outing, no_return_work, real_worker, hes_1, hes_2, hes_3, long_nighter)
 
-    return temp_work, real_worker, outing
+    return temp_work, real_worker, outing, today_time, today_group, p2, accident, no_return_work, hes_1, hes_2, hes_3, long_nighter

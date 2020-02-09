@@ -9,7 +9,6 @@ which_group = copy.deepcopy(constants.which_group)
 work_group = copy.deepcopy(constants.work_group)
 p2 = copy.deepcopy(constants.p2)
 
-
 def printing(tt):
     for i in range(4):
         print("\t", [x.name for x in tt[i]])
@@ -36,3 +35,4 @@ if __name__ == '__main__':
         for h in result:
             print(h.name, end=' ')
             Work_Scheduler.whatis_hwork(h.work)
+

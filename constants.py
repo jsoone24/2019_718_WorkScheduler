@@ -92,12 +92,11 @@ out = []
 
 
 def whos_out(p2, today_group, max_work):
-    # acci = input("사고자 입력 : ").split()
-    # out = input("외출자 입력 : ").split()
     global acci
     global out
-    #acci = ['김수현', '이기훈', '김주환', '연상헌']  # input("사고자 입력 : ").split()
-    #out = ['유준상', '유재열', '전명재', '김호송', '하석준']  # ("외출자 입력 : ").split()
+
+    # acci = ['김건웅','유재열','유준상','안창원']  # input("사고자 입력 : ").split()
+    # out = []  # ("외출자 입력 : ").split()
 
     real_worker, accident, outing, no_return_work, raw_outing = [], [], [], [], []
 
